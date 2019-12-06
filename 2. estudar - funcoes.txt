@@ -1,0 +1,78 @@
+﻿####### portugol - não é uma linguagem de programação
+####### exemplificação de lógica de programação - análise lógica da situação
+
+
+### ESTUDO
+
+
+##  1. análise dos componentes da situação
+aula;
+
+
+estudar: (ler_textos, anotar_aula, anotar_leitura, ler_anotações_aula, ler_anotações_leitura, ler_slides, ler_bibliografia_complementar)
+
+
+conteúdo: (leitura_aula, conteúdo_aula, bibliografia_complementar)
+
+
+dias_para_prova;
+
+
+tempo_livre;
+
+
+## 2. como essas variaveis se relacionam entre si
+
+
+
+
+funcao estudar_antecedencia ():
+        if ( aula_futuro == V ):                          ## se for ter aula
+                ler_textos(aula);                                  ## ativar funçao ler_textos para os textos correspondentes a aula
+                anotar_leituras;
+                
+        elif ( aula_agora == V):                        ## elif: mais uma condição dentro da situação proposta pelo if inicial
+                anotar_aula;                                        ## se estiver tendo aula
+
+
+        else:                                                                 ## é a situação nao abarcada antes, ou seja, quando nao tem aula 
+                ler_anotações_leitura;
+                ler_anotações_aula;
+                ler_bibliografia_complementar;
+
+
+
+
+
+
+funcao prova_em_duas_semanas(conteudo):                 ## os parametros da funcao, o que voce precisa fornecer para ela
+        
+        if (estudar_antecedencia == F ):                         ## se nao houve evocação da funcao estudar_antecedencia, traçar outro plano
+
+
+        c_leitura_por_dia = (leitura_aula)/14                 ## quantas paginas eu tenho q ler por dia nos proximos 14 dias
+        c_aula_por_dia = (conteúdo_aula + anotar_aula)/ 14
+
+
+        ## lembrando que o resultado acima é o resultado de uma divisão
+        ## ou seja, se for em pagina 140/14 == 10  (paginas por dia)
+        ## mas se for por capitulo 10/14 == 0.71   
+        ## no caso vou usar capitulos
+
+
+        if (c_leitura_por_dia < = 1):
+                ler_textos(todos);
+
+
+        else:                 ##quando for mais q um cap por dia
+                ler_textos(alguns);
+
+
+
+
+
+
+funcao estudar_vespera ():
+        if (estudar_antecedencia == F) AND (prova_em_duas_semanas == F ):
+                ler_anotações_aula;
+                ler_slides;

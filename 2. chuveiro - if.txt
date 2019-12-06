@@ -1,0 +1,18 @@
+﻿//////portugol - não é uma linguagem de programação
+//////exemplificação de lógica de programação
+
+
+// temperatura do chuveiro
+
+def funcao analise_temperatura (temperatura):
+	if temperatura < 20 :
+		muito frio!!
+
+	if  20 < temperatura < 30:
+		ainda frio 
+
+	if 30 < temperatura < 40 :
+		perfeito
+
+	if temperatura > 40:
+		muito quente!!

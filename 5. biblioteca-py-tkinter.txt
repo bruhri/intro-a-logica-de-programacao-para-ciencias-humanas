@@ -1,0 +1,109 @@
+from tkinter import *
+
+class Application:
+  def __init__(self, master=None):
+      self.primeiroContainer = Frame(master)
+      self.primeiroContainer["pady"] = 10
+      self.primeiroContainer.pack()
+
+      self.segundoContainer = Frame(master)
+      self.segundoContainer["padx"] = 20
+      self.segundoContainer.pack()
+
+      self.terceiroContainer = Frame(master)
+      self.terceiroContainer["padx"] = 20
+      self.terceiroContainer.pack()
+
+      self.quartoContainer = Frame(master)
+      self.quartoContainer["pady"] = 10
+      self.quartoContainer.pack()
+
+      self.quintoContainer = Frame(master)
+      self.quintoContainer["pady"] = 10
+      self.quintoContainer.pack()
+
+      self.titulo = Label(self.primeiroContainer, text="Calcular Soma")
+      self.titulo["font"] = ("Arial", "12", "bold")
+      self.titulo.pack()
+
+      self.n1Label = Label(self.segundoContainer, text="Primeiro Número:", font=("Courier New", "12"))
+      self.n1Label.pack(side=LEFT)
+
+      self.n1 = Entry(self.segundoContainer)
+      self.n1["width"] = 8
+      self.n1["font"] = ("Arial", "12")
+      self.n1.pack(side=RIGHT)
+
+      self.n2Label = Label(self.terceiroContainer, text=" Segundo Número:", font=("Courier New", "12"))
+      self.n2Label.pack(side=LEFT)
+
+      self.n2 = Entry(self.terceiroContainer)
+      self.n2["width"] = 8
+      self.n2["font"] = ("Arial", "12")
+      self.n2.pack(side=LEFT)
+
+      self.somar = Button(self.quartoContainer)
+      self.somar["text"] = "Somar"
+      self.somar["font"] = ("Arial", "12", "bold")
+      self.somar["width"] = 10
+      self.somar["command"] = self.soma
+      self.somar.pack()
+
+      self.subtr = Button(self.quartoContainer)
+      self.subtr["text"] = "Subtrair"
+      self.subtr["font"] = ("Arial", "12", "bold")
+      self.subtr["width"] = 10
+      self.subtr["command"] = self.subtra
+      self.subtr.pack()
+
+      self.mult = Button(self.quartoContainer)
+      self.mult["text"] = "Multiplicar"
+      self.mult["font"] = ("Arial", "12", "bold")
+      self.mult["width"] = 10
+      self.mult["command"] = self.multe
+      self.mult.pack()
+
+      self.divis = Button(self.quartoContainer)
+      self.divis["text"] = "Somar"
+      self.divis["font"] = ("Arial", "12", "bold")
+      self.divis["width"] = 10
+      self.divis["command"] = self.divisa
+      self.divis.pack()
+
+
+      self.mensagem = Label(self.quintoContainer, text="", font=("Arial", "14"))
+      self.mensagem["fg"]="blue"
+      self.mensagem.pack()
+
+  # Método para somar
+  def soma(self):
+      num1 = float(self.n1.get())
+      num2 = float(self.n2.get())
+      s=num1+num2
+      self.mensagem["text"] = "A soma é " + str(s)
+
+  def subtra(self):
+      num1 = float(self.n1.get())
+      num2 = float(self.n2.get())
+      sub=num1-num2
+      self.mensagem["text"] = "A subtracao é " + str(sub)
+
+  def multe(self):
+      num1 = float(self.n1.get())
+      num2 = float(self.n2.get())
+      mult=num1*num2
+      self.mensagem["text"] = "A multiplicacao é " + str(mult)
+
+  def divisa(self):
+      num1 = float(self.n1.get())
+      num2 = float(self.n2.get())
+      divis=num1/num2
+      self.mensagem["text"] = "A divisao é " + str(divis)
+
+
+
+
+root = Tk()
+root.title("Calculadora Kawaii")
+Application(root)
+root.mainloop()

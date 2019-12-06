@@ -1,0 +1,20 @@
+﻿####### portugol - não é uma linguagem de programação
+####### exemplificação de lógica de programação
+
+atividade = interação dedo-tela; pode ser V ou F ;
+situação_tela = também varia em duas condições, ligada ou desligada;
+tempo_inatividade = o tempo que transcorre desde o momento que atividade vai de V para F (ou seja quando atividade==F)
+bloqueio = impedimento de acesso por senha/pin
+
+
+
+while atividade == V 		##enquanto houver toque na tela
+	situação_tela = acesa 	##tela permanece acesa
+				##se sair dessa condição significa que não há mais toque
+
+if (tempo_inatividade < 2 minutos )	##aqui a situação já é na falta de toque
+	situação tela = desliga
+else					##o else pega o resto da condição que o if não abarca
+	situação tela = desliga		##ou seja, quando o tempo de inatividade for maior que 2 minutos
+	bloqueio			
+	

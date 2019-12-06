@@ -1,0 +1,7 @@
+//recebe letras do usuário e retorna "valido" se forem mais que três
+
+entrada = input("Informe uma string ")
+if len(entrada) < 3:
+   print("Erro, menor que três caracteres")
+else:
+   print("Válido")

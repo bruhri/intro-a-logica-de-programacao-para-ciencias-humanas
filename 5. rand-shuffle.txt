@@ -1,0 +1,16 @@
+from random import *
+
+print(randint(0, 11))
+
+print(randrange(2, 11, 2))
+
+print(choice("ABCDEFGH"))
+
+x = [[i] for i in range(10)]
+print(x)
+shuffle(x)
+print(x)
+
+meu_amor = ["E", "U", "S2", "F", "O", "U", "C", "A", "U", "L", "T"]
+shuffle(meu_amor)
+print(meu_amor)

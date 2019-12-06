@@ -1,0 +1,37 @@
+﻿//////portugol - não é uma linguagem de programação
+//////exemplificação de lógica de programação
+
+// estocar geladeira
+
+conteudos = {frutas : 3; legumes : 9; castanhas: 300; carne: 1; graos: 200;}
+
+
+	if frutas > 2:
+		sair para comprar;
+
+	if legumes > 1:
+		sair para comprar
+
+	if carne > 3 :
+		sair para comprar   	/// a saída desta checagem para os conteúdos daria "sair para comprar "
+
+	if castanhas > 50:
+		sair para comprar
+
+	if graos > 100 :
+		sair para comprar
+
+
+//// tudo que se repete pode ser automatizado
+
+def funcao checar_comida (comida, limite_min):
+	if comida > limite_min:
+		sair para comprar 
+
+////depois de definida a função, é possível só chamar ela 
+
+checar_comida(castanha, 50)
+	//saida: nada 
+
+checar_comida(carne, 3)
+	// saída: sair para comprar
