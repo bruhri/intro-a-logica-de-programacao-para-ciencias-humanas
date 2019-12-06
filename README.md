@@ -13,8 +13,8 @@ Composto por
   
  Workshop feito em outubro de 2019 na Semana Universitária da Universidade de Brasília
  
- Ministrada por Bruna Iglesias
-                Emilly Lima
+ Ministrada por Bruna Iglesias,
+                Emilly Lima,
                 Beatriz Ulian
   
 
