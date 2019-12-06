@@ -17,4 +17,4 @@ Composto por
                 Emilly Lima
                 Beatriz Ulian
   
-# pela alfabetização computacional ! democratização de conhecimento !
+
